@@ -1,11 +1,11 @@
-# AuditLens
+# PdfLens
 
-AuditLens is a document-grounded analysis assistant for PDFs.  
+PdfLens is a document-grounded analysis assistant for PDFs.  
 The app extracts structured PDF content (text, tables, images), builds page-aware context, and answers user questions with citations tied to original pages.
 
 This README is intentionally detailed so a new developer can understand the system end-to-end without opening many files first.
 
-### Resume highlights (ATS-friendly)
+### Resume highlights
 
 - **Document-grounded AI assistant** — Built a full-stack app (React/TypeScript, FastAPI, PostgreSQL) that ingests PDFs, preserves page-level context, and answers questions with evidence and clickable page citations.
 - **LangChain + Gemini RAG (Chroma)** — PDF chunking, **`GoogleGenerativeAIEmbeddings`**, **Chroma** persistent vector store (`langchain-chroma`), top-k **similarity retrieval** into the LLM prompt for large documents, plus **`langchain-postgres`** session history and SSE streaming.
